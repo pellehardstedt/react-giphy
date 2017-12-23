@@ -1,11 +1,11 @@
-const express = require('express');
+const const express = require('express');
 const app = express();
+const path = require('path');
 
-app.use(express.static('/client/build'));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.get('*', (req, res) => {
-  res.sendFile('/client/build/index.html'));
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 
-
-app.listen(3001, () => console.log('Listening on port 3001!'));
+app.listen(3001, () => console.log('Listening on port 3000!'));
