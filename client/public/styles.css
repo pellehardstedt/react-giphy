@@ -1,0 +1,55 @@
+html {
+    min-height:100%;
+}
+
+body {
+    padding-top: 52px;
+    background: linear-gradient(#e6f8cf, #cce3ff);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #fff;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    padding: 14px 16px;
+    margin: 0;
+}
+
+#refresh {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    margin: 0;
+    float: right;
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('loading.gif') no-repeat center center;
+    z-index: 9999;
+}
+
+.img-col {
+    border: 1rem solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .img-col {
+        border: 0.5rem solid white;
+    }
+}
